@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+        <style>
+            body > div {
+                width: 400px; height: 100px;
+                border: 3px solid black;
+                position: relative;
+                overflow-y: scroll;
+            }
+            .box {
+                width: 100px; height: 100px;
+                position: absolute;
+            }
+            .box:nth-child(1) {
+                background-color: red;
+                left: 10px; top: 10px;
+                z-index: 100;
+            }
+            .box:nth-child(2) {
+                background-color: green;
+                left: 50px; top: 50px;
+                z-index: 10;
+            }
+            .box:nth-child(3) {
+                background-color: blue;
+                left: 90px; top: 90px;
+                z-index: 1;
+            }
+            .font_big {font-size: 2em;}
+            .font_italic {font-style: italic;}
+            .font_bold {font-weight: bold;}
+            .font_center {text-align: center; }
+
+            .button {
+                width: 150px;
+                height: 70px;
+                background-color: #FF6A00;
+                border: 10px solid #FFFFFF;
+                border-radius: 30px;
+                box-shadow: 5px 5px 5px #A9A9A9;
+            }
+            .button > a {
+                display: block;
+            }
+            body {
+                background-color: #E7E7E8;
+                background-image: url('BackgroundFront.png'), url('BackgroundBack.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: 0px 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lorem ipsum dolor amet</h1>
+        <div>
+            <div class="box"></div>
+            <div class="box"></div>
+             <div class="box"></div>
+        </div>
+        <h1>Lorem ipsum dolor amet</h1>
+        <div class="button">
+            <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+        </div>
+        <p>의미없는 더미 객체</p>
+        <span>더미 객체</span>
+        <span>더미 객체</span>
+        <p>의미없는 더미 객체</p>
+    </body>
+</html>
