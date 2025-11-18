@@ -1,0 +1,41 @@
+### 최소 분산 포트폴리오
+POST http://localhost:5000/api/optimize/min-variance
+Content-Type: application/json
+
+{
+  "codes": ["005930", "000660"],
+  "start": "2025-01-01"
+}
+
+
+### 최대 샤프 포트폴리오
+POST http://127.0.0.1:5000/api/optimize/target-risk
+
+Content-Type: application/json
+
+{
+  "codes": ["005930", "000660", "035420"],
+  "start": "2020-01-01",
+  "end": "2024-01-01",
+  "target_risk": 0.5
+}
+
+
+### 리스크 패리티
+POST http://localhost:5000/api/optimize/risk-parity
+Content-Type: application/json
+
+{
+  "codes": ["005930", "000660"],
+  "start": "2025-01-01"
+}
+
+
+### 최대 분산비율
+POST http://localhost:5000/api/optimize/max-diversification
+Content-Type: application/json
+
+{
+  "codes": ["005930", "000660"],
+  "start": "2025-01-01"
+}
