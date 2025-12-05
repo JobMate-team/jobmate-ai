@@ -1,0 +1,1107 @@
+[
+    {
+      "page_content": "남들에게 들은 본인의 단점을 한가지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "지금 부르면 30분내로 달려올 친구가 몇명 있는지 말해주세요",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["leadership", "resilience"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "웹개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "디자인 패턴에 대해 아는대로 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "communication"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "웹개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "실제로 수율이 프로그래밍만으로 올릴 수 있는 것은 아니인데, 어떤 아이디어가 있는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "problem_solving"],
+        "difficulty": 4,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "오버라이딩과 오버로딩에 어떤 차이가 있는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "algorithm"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "왜 MX사업부에 지원하였는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["system_understanding", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "대학시절 했던 여러 프로젝트들 중에서 협업을 하면서 힘들었던 경험과 이를 극복했던 경험에 대해서 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "학부연구생을 하였다면, 대학원 진학생각이 있는지에 대해서 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["communication"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "왜 당사에 입사해야하는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["problem_solving", "communication"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "웹개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성전자"
+      }
+    },
+    {
+      "page_content": "학교를 다니면서 스트레스 받을 때는 언제이고, 어떻게 해결했는지 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["leadership", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-SK하이닉스"
+      }
+    },
+    {
+      "page_content": "동아리나 대외활동에 대해서 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["leadership", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-SK하이닉스"
+      }
+    },
+    {
+      "page_content": "학부연구생을 하였다면, 석사진학을 목표로 한 것인지 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["leadership", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-SK하이닉스"
+      }
+    },
+    {
+      "page_content": "자기소개를 해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["leadership", "communication"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "시스템엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "프레젠테이션을 하면서 힘든 점은 없었는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "시스템엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "OSI 7계층에 대해서 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "network"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "Telemetry가 어떤 용도로 사용되는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "network"],
+        "difficulty": 4,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "어떤 프로그래밍 툴을 사용할 수 있는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "algorithm"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "당사에 자신이 기여할 수 있는 부분이 어떤 부분이라고 생각하는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["leadership", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "자기소개서를 보니 직무에 연관된 점이 적은 것 같은데 어떻게 생각하시는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "본인이 당사에서 선호하는 직무가 있는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["communication", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "직무상 새로운 프로그래밍 언어를 배워야할 수 있는데, 잘 배울 수 있는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["problem_solving", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "채용공고를 봤을 때, 우대사항과 기본 자격 항목이 있는데, 본인은 거기서 어떤 강점과 약점이 있다고 생각하시는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["problem_solving", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "가장 힘들었던 일에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "인턴",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "졸업작품에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "인턴",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "급박한 상황에 대처한 경험에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "무모한 도전을 해본적이 있는지에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["leadership", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "SDN과 관련하여 연구경험이 있다면, 이에 대해서 설명해주세요",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "collaboration"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "대학원에 진학했다면, 대학원 코스웍이 어떻게 되고 무엇을 배웠는지 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "R&D연구원",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "비전공자인데, 왜 해당 직무에 지원하셨는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["problem_solving", "communication"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "입사 후 포부를 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["communication", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "마지막으로 하고 싶으신 말이 있다면 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["communication", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "시스템엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "당사에 지원한 이유에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["communication", "ownership"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-KT"
+      }
+    },
+    {
+      "page_content": "네트워크에서 OSI 7계층에 대해서 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "network"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-엘지전자"
+      }
+    },
+    {
+      "page_content": "당사에 기여할 수 있는 부분에 대해서 자세히 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["cs_basics", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-엘지전자"
+      }
+    },
+    {
+      "page_content": "프로젝트에서 간트 차트를 사용해보셨다면, 이를 어떻게 사용하셨는지와 이에 어떤 효과가 있었는지 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["cs_basics", "algorithm"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-엘지전자"
+      }
+    },
+    {
+      "page_content": "차량 네트워크 통신 관련 보안 이슈를 연계한 통신관련 구현을 한 경험이 있다면 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["cs_basics", "network"],
+        "difficulty": 4,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-엘지전자"
+      }
+    },
+    {
+      "page_content": "프로젝트 경험 중에서 원리에 대해서 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["cs_basics", "algorithm"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-엘지전자"
+      }
+    },
+    {
+      "page_content": "전공분야 이외에 다른 취미나 좋아하는 것이 없는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["leadership", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-엘지전자"
+      }
+    },
+    { 
+      "page_content": "준비해온 자기소개 이외에 자신의 강점을 30초간 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["communication", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "AI/ML엔지니어",
+        "level": "신입",
+        "source": "잡코리아-NH농협은행"
+      }
+    },
+    { 
+      "page_content": "본인가 가까운 인물의 장점과 단점은 무엇인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["communication", "problem_solving"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "AI/ML엔지니어",
+        "level": "신입",
+        "source": "잡코리아-NH농협은행"
+      }
+    },
+    { 
+      "page_content": "본인과 가까운 인물의 장단점을 통해서 본인이 발전한점에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["resilience", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "AI/ML엔지니어",
+        "level": "신입",
+        "source": "잡코리아-NH농협은행"
+      }
+    },
+    { 
+      "page_content": "자신의 단점은 무엇이고 어떻게 극복하셨는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["resilience", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-NH농협은행"
+      }
+    },
+    { 
+      "page_content": "AWS ECS, ECR, EKS, fagate의 차이점에 대해서 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "network"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "시스템엔지니어",
+        "level": "신입",
+        "source": "잡코리아-SK텔레콤"
+      }
+    },
+    { 
+      "page_content": "맡고 있거나 맡았던 프로젝트 중에서 가장 인상깊은 것과 자신의 역할 및 기여도에 대한 부분과 동료와 협업했던 부분에 대해서 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["problem_solving", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "시스템엔지니어",
+        "level": "신입",
+        "source": "잡코리아-SK텔레콤"
+      }
+    },
+    {
+      "page_content": "남들이 당신을 어떻게 평가하는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["leadership", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성에스디에스"
+      }
+    },
+    {
+      "page_content": "작성한 관심분야와 다른데 왜 SDS에 지원하셨는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["resilience", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성에스디에스"
+      }
+    },
+    {
+      "page_content": "대기업 규제 중에서 어떤 규제가 있어야한다고 생각하는지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["ownership", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-삼성에스디에스"
+      }
+    },
+    {
+      "page_content": "비전공자이신데 IT전공자들에 비해 실력이 부족할 수 있을 것 같은데 어떻게 극복할 수 있을지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["leadership", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-우리은행"
+      }
+    },
+    {
+      "page_content": "블록체인의 약점과 당사에서 이것을 어떻게 보완할 수 있을지에 대해서 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-우리은행"
+      }
+    },
+    {
+      "page_content": "당사의 경우 IT부서의 실제 개발은 FIS에서 진행해서 입사 후에 실제 개발 업무는 안할 수도 있는데 괜찮으신지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["collaboration", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-우리은행"
+      }
+    },
+    {
+      "page_content": "당사의 애플리케이션이 간단한 방식으로 가야하는지, 통합앱 형시긍로 가야하는지 본인의 생각은 어떠한지 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["ownership", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "소프트웨어개발자",
+        "level": "신입",
+        "source": "잡코리아-우리은행"
+      }
+    },
+    {
+      "page_content": "왜 대학원 진학을 하지않고, 당사에 입사지원을 하셨는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["leadership", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-우리은행"
+      }
+    },
+    {
+      "page_content": "당사에서 좋은 IT인재를 등용하기 위해서 어떻게 해야할지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["leadership", "ownership"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-우리은행"
+      }
+    },
+    {
+      "page_content": "입사하게 된다면 지원한 직무 뿐만 아니라 개발업무도 하게 될 수 있는데, 어떻게 생각하시는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["ownership", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "AI/ML엔지니어",
+        "level": "신입",
+        "source": "잡코리아-기아"
+      }
+    },
+    {
+      "page_content": "학위 논문을 포함해서 연구실적을 구체적으로 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["ownership", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "AI/ML엔지니어",
+        "level": "신입",
+        "source": "잡코리아-기아"
+      }
+    },
+    {
+      "page_content": "코딩테스트 1번을 풀어나간 간단한 브리핑을 해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["algorithm", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "AI/ML엔지니어",
+        "level": "신입",
+        "source": "잡코리아-기아"
+      }
+    },
+    {
+      "page_content": "맡은 직무를 잘 할 수 있는 자신의 장점 2가지와 단점 1가지를 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["collaboration", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "마지막으로 면접관에게 질문하시고 싶은 부분이 있다면 해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["collaboration", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "본인의 별명이 무엇인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["leadership", "collaboration"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "테스트케이스를 직접만들 때 무엇을 고려하여 설계하였는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "본인이 지원하신 직무가 무슨일을 한다고 생각하시는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["ownership", "collaboration"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "게임개발자",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "마지막으로 면접관에게 질문하시고 싶은 부분이 있다면 해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["collaboration", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "최근에 본 직무 관련 뉴스에 대해서 말해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["communication", "problem_solving"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "당사의 애플리케이션을 사용해보았다면, 어떤 문제가 있었는지 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["system_understanding", "communication"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "졸업 후 공백기간 동안 무엇을 하였는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "인턴 근무 경험이 있다면, 해당 근무에 대해 스스로 평가해보세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["problem_solving", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },{
+      "page_content": "본인이 가장 오래 플레이해본 게임과 가장 마음에 들었던 컨텐츠에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "resilience"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "조직 내 갈등이 발생했을 때 어떻게 중재하였는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "게임 내 재화를 현금 거래하는 것에 대해서 찬성인지 반대인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["communication", "leadership"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "친구들이 부르는 별명에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tenacity",
+        "competency_tags": ["communication", "leadership"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "QA",
+        "level": "신입",
+        "source": "잡코리아-넥슨네트웍스"
+      }
+    },
+    {
+      "page_content": "본인의 연구 성과 및 경력을 당사의 기술 발전에 어떻게 기여할 수 있을 지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "왜 해당 직무를 선택했는지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "가장 기억에 남는 프로젝트와 수행 중 가장 어려웠던 점이 무엇인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "아르바이트를 오래 하셨는데, 이유에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "PT주제에 대해서 설명해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "resilience"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "다른 회사에서 오퍼가 온다면 어떻게 할 것인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["communication", "collaboration"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "네트워크엔지니어",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "PT내용에 대해서 실현할 수 있는 기술적인 방안에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "자신이 리더형인지 팔로워형인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "values",
+        "competency_tags": ["leadership", "collaboration"],
+        "difficulty": 1,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "만약 입사 이후 원하는 직무를 맡지 못하였을때, 어떻게 할 것인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "job",
+        "competency_tags": ["communication", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "PT발표에서 제시한 대안이 예상처럼 안된다면 어떻게 할 것인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "코딩테스트 문제를 못풀었는데, 일하다가 이렇게 못푸는 문제가 있다면 어떻게 할 것인지 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "experience",
+        "competency_tags": ["communication", "problem_solving"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "빅데이터와 스몰데이터의 차이점에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "database"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "앱개발자",
+        "level": "신입",
+        "source": "잡코리아-케이티디에스"
+      }
+    },
+    {
+      "page_content": "MVC가 무엇인지에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "algorithm"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "웹개발자",
+        "level": "신입",
+        "source": "잡코리아-넥슨코리아"
+      }
+    },
+    {
+      "page_content": "db procedure에 대해서 아시는대로 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "database"],
+        "difficulty": 3,
+        "job_family": "IT",
+        "position": "웹개발자",
+        "level": "신입",
+        "source": "잡코리아-넥슨코리아"
+      }
+    },
+    {
+      "page_content": "사용해본 DBMS에 대해서 말씀해주세요.",
+      "metadata": {
+        "question_id": "",
+        "question_type": "tech",
+        "competency_tags": ["cs_basics", "database"],
+        "difficulty": 2,
+        "job_family": "IT",
+        "position": "웹개발자",
+        "level": "신입",
+        "source": "잡코리아-넥슨코리아"
+      }
+    }
+  ]
+  

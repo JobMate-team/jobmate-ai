@@ -1,0 +1,24 @@
+[
+  {
+    "page_content": "경험형 질문에는 STAR 구조를 활용하세요:\n- Situation: 상황 설명\n- Task: 과제 설명\n- Action: 행동\n- Result: 결과",
+    "metadata": {
+      "pattern_id": "pattern_star_exp",
+      "question_type": "experience",
+      "structure_name": "STAR",
+      "job_family": "개발",
+      "position": "백엔드",
+      "level": "신입"
+    }
+  },
+  {
+    "page_content": "가치관 질문에는 PREP 구조를 활용하세요:\n- Point: 요지\n- Reason: 이유\n- Example: 사례\n- Point: 반복 정리",
+    "metadata": {
+      "pattern_id": "pattern_prep_behavioral",
+      "question_type": "behavioral",
+      "structure_name": "PREP",
+      "job_family": "개발",
+      "position": "백엔드",
+      "level": "신입"
+    }
+  }
+]

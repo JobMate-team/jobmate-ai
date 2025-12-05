@@ -1,0 +1,26 @@
+[
+    {
+      "page_content": "문제 해결력은 주어진 제약 조건 하에서 문제를 정의하고 해결책을 찾는 능력입니다.\n좋은 예: 구조적으로 문제를 설명하고 해결 과정을 말한다.\n나쁜 예: 상황을 잘 설명하지 못하거나 해결책이 모호하다.",
+      "metadata": {
+        "competency_id": "problem_solving",
+        "competency_name": "문제 해결력",
+        "question_type": "experience",
+        "importance": 5,
+        "job_family": "개발",
+        "position": "백엔드",
+        "level": "신입"
+      }
+    },
+    {
+      "page_content": "CS 기초 역량은 운영체제, 네트워크, 자료구조 등 전반적 이해도를 의미합니다.\n좋은 예: TCP/IP, 세그먼트 구조 등 개념을 명확히 말함.\n나쁜 예: 용어만 암기해 정의만 외움.",
+      "metadata": {
+        "competency_id": "cs_basics",
+        "competency_name": "CS 기초",
+        "importance": 4,
+        "job_family": "개발",
+        "position": "백엔드",
+        "level": "신입"
+      }
+    }
+  ]
+  

@@ -1,0 +1,28 @@
+[
+  {
+    "page_content": "대학교 해커톤에서 API 서버 장애가 발생했지만, 실시간 로그 분석과 리버스 프록시 재설정을 통해 문제를 해결하고 대상을 수상했습니다.",
+    "metadata": {
+      "answer_id": "model_exp_hackathon_01",
+      "question_text": "가장 기억에 남는 프로젝트는?",
+      "question_type": "experience",
+      "competency_tags": ["problem_solving", "ownership"],
+      "structure_name": "STAR",
+      "job_family": "개발",
+      "position": "백엔드",
+      "level": "신입"
+    }
+  },
+  {
+    "page_content": "REST는 자원을 URI로 표현하고, RESTful은 HTTP 메서드를 일관되게 사용하며 상태를 클라이언트에 위임하는 스타일입니다.",
+    "metadata": {
+      "answer_id": "model_concept_rest_01",
+      "question_text": "REST와 RESTful의 차이를 설명해주세요.",
+      "question_type": "concept",
+      "competency_tags": ["cs_basics", "system_understanding"],
+      "structure_name": null,
+      "job_family": "개발",
+      "position": "백엔드",
+      "level": "신입"
+    }
+  }
+]
