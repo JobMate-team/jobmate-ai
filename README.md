@@ -1,10 +1,9 @@
 ### 가상환경(venv) 및 라이브러리 설치 안내!
 
 ① 폴더이동
+
 ```
-
 cd C:\Users\...\jobmate-ai
-
 ```
 
 
@@ -14,10 +13,13 @@ cd C:\Users\...\jobmate-ai
 
 ③ venv 활성화( 앞에 venv 붙으면 됨)
 
+### [Window]
 ```
-[Window]
+
 .\{yourvenv}\Scripts\activate
-[Mac]
+```
+### [Mac]
+```
 source {your venv}/bin/activate
 
 ```
