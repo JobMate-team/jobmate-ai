@@ -515,7 +515,6 @@ async def search_documents(request: SearchDocumentsRequest = Body(...)):
         answer_pattern_docs=[doc_to_dict(doc) for doc in answer_pattern_docs],
     )
 
-
 @app.post("/structured-feedback")
 async def structured_feedback(req: StructuredFeedbackRequest = Body(...)):
     # 내부적으로 기존 검색 파이프라인 재사용
