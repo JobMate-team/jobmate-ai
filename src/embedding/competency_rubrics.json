@@ -1,0 +1,114 @@
+[
+  {
+    "page_content": "문제 해결력은 주어진 제약 조건 하에서 문제를 정의하고 해결책을 찾는 능력입니다.\n좋은 예: 문제를 구조적으로 분석하고 해결 과정을 단계적으로 설명한다.\n나쁜 예: 문제의 원인을 명확히 제시하지 못하거나 해결책이 모호하다.",
+    "metadata": {
+      "competency_id": "problem_solving",
+      "competency_name": "문제 해결력",
+      "importance": 5
+    }
+  },
+  {
+    "page_content": "CS 기초 역량은 운영체제, 네트워크, 자료구조 등 컴퓨터 공학 전반의 개념을 얼마나 이해하고 있는지를 의미합니다.\n좋은 예: TCP/IP, 메모리 구조 등 핵심 개념을 정확한 용어로 설명한다.\n나쁜 예: 용어만 나열하거나 개념 자체의 관계를 이해하지 못한다.",
+    "metadata": {
+      "competency_id": "cs_basics",
+      "competency_name": "CS 기초",
+      "importance": 4
+    }
+  },
+  {
+    "page_content": "시스템 이해도는 서비스 전체 구조가 어떻게 구성되고 동작하는지 파악하는 능력입니다.\n좋은 예: 서비스 흐름을 전체 관점에서 설명하고 주요 컴포넌트의 역할을 연결해 말한다.\n나쁜 예: 특정 기능만 단편적으로 말하거나 전체 구조를 설명하지 못한다.",
+    "metadata": {
+      "competency_id": "system_understanding",
+      "competency_name": "시스템 이해도",
+      "importance": 4
+    }
+  },
+  {
+    "page_content": "데이터베이스 역량은 RDBMS·NoSQL의 구조, 트랜잭션, 인덱스 등 데이터 처리에 대한 이해도를 의미합니다.\n좋은 예: 인덱스 구조, 트랜잭션 격리 수준 등 핵심 개념을 사례와 함께 설명한다.\n나쁜 예: 단순 CRUD 중심으로만 DB를 이해하거나 개념을 잘못 설명한다.",
+    "metadata": {
+      "competency_id": "database",
+      "competency_name": "데이터베이스",
+      "importance": 4
+    }
+  },
+  {
+    "page_content": "네트워크 역량은 HTTP, TCP/IP, DNS 등 서비스 통신 구조에 대한 이해를 의미합니다.\n좋은 예: HTTPS 동작 방식, 공격 벡터 등을 명확히 설명한다.\n나쁜 예: 포트 번호나 프로토콜 이름만 외우고 실제 흐름을 설명하지 못한다.",
+    "metadata": {
+      "competency_id": "network",
+      "competency_name": "네트워크",
+      "importance": 4
+    }
+  },
+  {
+    "page_content": "알고리즘 역량은 문제를 해결하기 위해 적절한 알고리즘을 선택하고 시간·공간 복잡도를 고려하는 능력을 의미합니다.\n좋은 예: 복잡도를 근거로 자료구조 선택 이유를 설명한다.\n나쁜 예: 특정 알고리즘만 기계적으로 외우고 실제 적용 이유를 설명하지 못한다.",
+    "metadata": {
+      "competency_id": "algorithm",
+      "competency_name": "알고리즘",
+      "importance": 3
+    }
+  },
+  {
+    "page_content": "인프라 역량은 서버, 배포, 로드밸런싱, 모니터링 등 운영 인프라의 기본 개념을 이해하는 능력입니다.\n좋은 예: 서버 구성 방식, 배포 파이프라인을 실제 경험 기반으로 설명한다.\n나쁜 예: AWS 서비스 이름만 나열하고 구조를 설명하지 못한다.",
+    "metadata": {
+      "competency_id": "infra",
+      "competency_name": "인프라",
+      "importance": 3
+    }
+  },
+  {
+    "page_content": "보안 역량은 인증·인가, 취약점 공격, 암호화 등 서비스의 안전성 개념을 이해하는 능력입니다.\n좋은 예: XSS, CSRF 등의 원리와 방지 방법을 설명한다.\n나쁜 예: 보안 용어만 나열하고 실제 위험이나 대응책을 이해하지 못한다.",
+    "metadata": {
+      "competency_id": "security",
+      "competency_name": "보안",
+      "importance": 3
+    }
+  },
+  {
+    "page_content": "커뮤니케이션 역량은 상대가 이해할 수 있도록 문제, 요구사항, 작업 내용을 명확하게 전달하는 능력입니다.\n좋은 예: 결론 → 근거 → 예시로 논리적 설명을 한다.\n나쁜 예: 말이 너무 장황하거나 핵심 없이 떠돈다.",
+    "metadata": {
+      "competency_id": "communication",
+      "competency_name": "커뮤니케이션",
+      "importance": 5
+    }
+  },
+  {
+    "page_content": "협업 역량은 팀원과 역할을 나누고 개발 프로세스에 맞춰 일하는 능력입니다.\n좋은 예: 코드 리뷰 과정, 갈등 해결 경험 등을 구체적으로 설명한다.\n나쁜 예: '다 같이 열심히 했다'처럼 역할과 기여가 모호하다.",
+    "metadata": {
+      "competency_id": "collaboration",
+      "competency_name": "협업",
+      "importance": 5
+    }
+  },
+  {
+    "page_content": "오너십은 맡은 업무의 결과에 책임을 지고 끝까지 추진하는 태도입니다.\n좋은 예: 예상치 못한 문제도 스스로 해결하고 일정 내 결과를 만들어낸다.\n나쁜 예: 책임을 회피하거나 이슈 발생 시 남 탓을 한다.",
+    "metadata": {
+      "competency_id": "ownership",
+      "competency_name": "오너십",
+      "importance": 5
+    }
+  },
+  {
+    "page_content": "리더십은 팀을 목표로 이끌고 구성원의 퍼포먼스를 높이는 태도입니다.\n좋은 예: 팀 분위기를 조성하거나 역할 분배로 프로젝트 성과를 높인 경험을 말한다.\n나쁜 예: 단순히 팀장을 해봤다고만 말하고 실제 영향력이 없다.",
+    "metadata": {
+      "competency_id": "leadership",
+      "competency_name": "리더십",
+      "importance": 4
+    }
+  },
+  {
+    "page_content": "회복탄력성(resilience)은 실패·갈등·압박 속에서도 다시 일어나 지속적으로 수행하는 능력입니다.\n좋은 예: 위기 상황을 어떻게 극복했는지 감정 조절 과정까지 설명한다.\n나쁜 예: 힘들었다는 감정만 얘기하고 극복 과정이 없다.",
+    "metadata": {
+      "competency_id": "resilience",
+      "competency_name": "회복탄력성",
+      "importance": 4
+    }
+  },
+  {
+    "page_content": "창의력은 기존 방식에만 의존하지 않고 새로운 해결책이나 접근을 제시하는 능력입니다.\n좋은 예: 제약 상황에서도 새로운 아이디어로 문제를 해결한 사례를 설명한다.\n나쁜 예: 단순히 '발상이 독특하다'라고만 하고 실제 구현 경험이 없다.",
+    "metadata": {
+      "competency_id": "creativity",
+      "competency_name": "창의력",
+      "importance": 3
+    }
+  }
+]
