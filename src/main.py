@@ -3,6 +3,8 @@ from fastapi import Body
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List, Tuple
+from typing import Optional
+import logging
 import os
 import json
 from textwrap import dedent
@@ -23,6 +25,7 @@ if not OPENAI_API_KEY:
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
+
 
 
 # FAISS 벡터 DB 준비
@@ -189,6 +192,7 @@ class SearchDocumentsResponse(BaseModel):
 
 # 구조화된 피드백 요청/응답 (마크다운 문자열 반환)
 class StructuredFeedbackRequest(BaseModel):
+    company: str | None = None
     job_family: str
     question: str
     answer: str
@@ -239,6 +243,10 @@ def build_user_prompt(
     {answer}
 
     [요청사항]
+    0. 만약 req.company가 비어 있거나 company_block이 비어 있다면:
+    - 회사 인재상과 관련된 모든 내용을 절대 생성하지 말아주세요.
+    - 회사와 관련된 조언, 요약, 비교, 평가 등을 절대 언급하지 말아주세요
+
     1. 위 답변에 대해 피드백을 제공해주세요.
        - 어떤 점이 좋고 어떤 점이 부족한지 서술
        - 필요한 경우 개선 제안을 포함하세요
@@ -360,24 +368,92 @@ def parse_feedback(raw: str) -> FeedbackResponse:
     )
 
 # 5. 기업 인재상
-def load_company_values(path="./embedding/company_values.json"):
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+# -- 회사 인재상 로딩 유틸리티 ------------------------------------------------
+
+# def load_company_values(path: str = "./src/embedding/company_values.json") -> list:
+#     """
+#     company_values.json 파일을 리스트로 읽어 반환한다.
+#     파일이 없거나 파싱 실패 시 빈 리스트 반환.
+#     """
+#     if not os.path.exists(path):
+#         logger.warning(f"company_values 파일을 찾을 수 없음: {path}")
+#         return []
+
+#     try:
+#         with open(path, "r", encoding="utf-8") as f:
+#             data = json.load(f)
+#             if isinstance(data, list):
+#                 return data
+#             else:
+#                 # 파일이 dict 형태로 저장된 경우(구조가 다르면 이걸 처리)
+#                 logger.warning(f"{path}의 형태가 list가 아님. 현재 타입: {type(data)}")
+#                 # 만약 dict로 {company_name: page_content} 형태라면 변환할 수 있으나
+#                 # 우선 빈 리스트 반환해서 안전하게 동작하도록 함
+#                 return []
+#     except Exception as e:
+#         logger.exception("company_values.json 로드 중 오류 발생:")
+#         return []
+
+
+
+def load_company_values(path: str = "./src/embedding/company_values.json") -> list:
+    """
+    company_values.json 파일을 리스트로 읽어 반환한다.
+    파일이 없거나 파싱 실패 시 빈 리스트 반환.
+    """
     if not os.path.exists(path):
+        logger.warning(f"company_values 파일을 찾을 수 없음: {path}")
         return []
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
 
-company_values_data = load_company_values()
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, list):
+                return data
+            else:
+                # 파일이 dict 형태로 저장된 경우(구조가 다르면 이걸 처리)
+                logger.warning(f"{path}의 형태가 list가 아님. 현재 타입: {type(data)}")
+                # 만약 dict로 {company_name: page_content} 형태라면 변환할 수 있으나
+                # 우선 빈 리스트 반환해서 안전하게 동작하도록 함
+                return []
+    except Exception as e:
+        logger.exception("company_values.json 로드 중 오류 발생:")
+        return []
 
-def get_company_values_text(company: str) -> str:
+# 전역 변수로 한 번만 로드 (앱 시작 시)
+company_values_data: list = load_company_values()
+
+
+def get_company_values(company: str) -> Optional[str]:
+    """
+    company (회사명 혹은 company_id)에 매칭되는 item의 page_content를 반환.
+    일치하는 항목이 없으면 None 반환.
+    company_values_data는 모듈 로드 시 이미 초기화되어 있음.
+    
+    만약 req.company가 비어 있거나 company_block이 비어 있다면:
+    - 회사 인재상과 관련된 모든 내용을 절대 생성하지 말아주세요.
+    - 회사와 관련된 조언, 요약, 비교, 평가 등을 절대 언급하지 말아주세요.
+
+    """
+    if not company:
+        return None
+
+    # 안전성: 회사 데이터가 비어 있으면 바로 None 반환
+    if not company_values_data:
+        return None
+
     for item in company_values_data:
-        meta = item.get("metadata", {})
-        
-        # company_name 또는 company_id 중 하나 매칭되면 사용
+        # item은 {"page_content": "...", "metadata": {...}} 형태라고 가정
+        if not isinstance(item, dict):
+            continue
+        meta = item.get("metadata") or {}
+        # 매칭 조건: company_name 또는 company_id
         if meta.get("company_name") == company or meta.get("company_id") == company:
-            return item["page_content"]
-
-    return ""
-
+            return item.get("page_content")
+    return None
+# -----------------------------------------------------------------------------
 # 6. FastAPI 엔드포인트 /답변 테스트용 fast api
 
 
@@ -388,52 +464,56 @@ app = FastAPI()
 
 # 기존 피드백 엔드포인트 (호환)
 
-@app.post("/ai-feedback", response_model=FeedbackResponse)
-async def ai_feedback(request: FeedbackRequest):
-    company_values_text = get_company_values_text(request.company)
-    context_docs = ""
-    sources = []
+# @app.post("/ai-feedback", response_model=FeedbackResponse)
+# async def ai_feedback(request: FeedbackRequest):
+#     if request.company:
+#         company_values_text = get_company_values_text(request.company)
+#     else:   
+#         company_values_text = ""
 
-    # 표준 질문일 경우 question_id로 벡터스토어에서 도큐먼트 검색
-    if request.standard_question == "y" and request.question_id:
-        # question_templates feature에서 question_id 일치하는 도큐먼트 추출
-        all_docs = vectorstore.docstore._dict.values()
-        doc = next((d for d in all_docs if d.metadata.get("feature") == "question_templates" and d.metadata.get("question_id") == request.question_id), None)
-        if doc:
-            context_docs = doc.page_content
-            sources = [request.question_id]
-        else:
-            print(f"question_id {request.question_id}에 해당하는 도큐먼트가 없습니다.")
+#     context_docs = ""
+#     sources = []
 
-    # 표준 질문이 아니면 기존 RAG 검색
-    if not context_docs:
-        try:
-            context_docs, sources = await get_rag_context(
-                request.job_group,
-                request.job,
-                request.company,
-                request.question,
-                request.answer,
-            )
-        except Exception as e:
-            print(" RAG 에러, 컨텍스트 없이 진행:", e)
-            context_docs = ""
-            sources = []
+#     # 표준 질문일 경우 question_id로 벡터스토어에서 도큐먼트 검색
+#     if request.standard_question == "y" and request.question_id:
+#         # question_templates feature에서 question_id 일치하는 도큐먼트 추출
+#         all_docs = vectorstore.docstore._dict.values()
+#         doc = next((d for d in all_docs if d.metadata.get("feature") == "question_templates" and d.metadata.get("question_id") == request.question_id), None)
+#         if doc:
+#             context_docs = doc.page_content
+#             sources = [request.question_id]
+#         else:
+#             print(f"question_id {request.question_id}에 해당하는 도큐먼트가 없습니다.")
 
-    if company_values_text:
-        context_docs = company_values_text + "\n\n---\n\n" + context_docs
-        sources.insert(0, f"{request.company}-company-values")
+#     # 표준 질문이 아니면 기존 RAG 검색
+#     if not context_docs:
+#         try:
+#             context_docs, sources = await get_rag_context(
+#                 request.job_group,
+#                 request.job,
+#                 request.company,
+#                 request.question,
+#                 request.answer,
+#             )
+#         except Exception as e:
+#             print(" RAG 에러, 컨텍스트 없이 진행:", e)
+#             context_docs = ""
+#             sources = []
 
-    raw = call_gpt(
-        job=request.job,
-        company=request.company,
-        question=request.question,
-        answer=request.answer,
-        context_docs=context_docs,
-    )
-    feedback = parse_feedback(raw)
-    feedback.retrieved_sources = sources
-    return feedback
+#     if company_values_text:
+#         context_docs = company_values_text + "\n\n---\n\n" + context_docs
+#         sources.insert(0, f"{request.company}-company-values")
+
+#     raw = call_gpt(
+#         job=request.job,
+#         company=request.company,
+#         question=request.question,
+#         answer=request.answer,
+#         context_docs=context_docs,
+#     )
+#     feedback = parse_feedback(raw)
+#     feedback.retrieved_sources = sources
+#     return feedback
 
 
 # 새로운 질문 랜덤 추출 엔드포인트
@@ -517,7 +597,7 @@ async def search_documents(request: SearchDocumentsRequest = Body(...)):
 
 @app.post("/structured-feedback")
 async def structured_feedback(req: StructuredFeedbackRequest = Body(...)):
-    # 내부적으로 기존 검색 파이프라인 재사용
+    # 1. 기존 검색 로직 (RAG)
     search_res = await search_documents(SearchDocumentsRequest(
         job_family=req.job_family,
         question=req.question,
@@ -525,7 +605,7 @@ async def structured_feedback(req: StructuredFeedbackRequest = Body(...)):
         top_k=req.top_k,
     ))
 
-    # 컨텍스트 구성
+    # 2. 컨텍스트 구성
     ctx_parts = []
     for d in search_res.top_question_docs:
         ctx_parts.append(f"[면접 질문 예시]\n{d['page_content']}")
@@ -537,12 +617,27 @@ async def structured_feedback(req: StructuredFeedbackRequest = Body(...)):
     for d in search_res.answer_pattern_docs:
         pattern = d.get('metadata', {}).get('structure_name') or d.get('metadata', {}).get('question_type')
         ctx_parts.append(f"[추천 답변 구조 - {pattern}]\n{d['page_content']}")
-
+    
     context_block = "\n\n".join(ctx_parts)
 
-    # 요청한 마크다운 형식으로 GPT 프롬프트 구성
-    prompt = dedent(f"""
-    [참고자료]
+    # ------------------------------------------------------------------
+    # 3. 회사 인재상 로직 (핵심 수정 부분)
+    # ------------------------------------------------------------------
+    company_values_content = None
+    
+    if req.company:
+        logger.info(f"사용자가 회사 입력: '{req.company}'")
+        found_values = get_company_values(req.company) # DB 조회
+        if found_values:
+             company_values_content = f"기업명: {req.company}\n내용: {found_values}"
+    
+    # 4. 프롬프트 동적 구성 (Python에서 제어)
+    
+    # 공통 프롬프트 상단
+    base_prompt = dedent(f"""
+    당신은 전문 면접 코치입니다.
+    
+    [참고 자료]
     {context_block}
 
     [사용자 질문]
@@ -550,40 +645,74 @@ async def structured_feedback(req: StructuredFeedbackRequest = Body(...)):
 
     [사용자 답변]
     {req.answer}
-
-    아래 형식으로만 출력하세요.
-    출력 시 반드시 Markdown 형식을 유지하고,
-    문단 사이에는 빈 줄(\\n\\n)을 넣으세요.
     
-    "출력 시 절대로 Markdown 규칙을 깨지 말고, 문단 사이에는 반드시 빈 줄(\\n\\n)을 넣으세요.\n"
-    "리스트 항목은 각 항목 뒤에 반드시 줄바꿈을 유지하세요.\n"
-    "아래 형식을 정확히 그대로 사용하세요. 형식 밖 어떤 내용도 추가하지 마세요.\n"
-
-
-    ### 전체 총평
-
-    전체 총평 5~6줄
-
-    ### 개선포인트
-    사용자의 답변에서 개선이 왜 필요하고, 어떻게 개선해야할지에 대해 설명
-    - [개선포인트1]
-    - [개선포인트2]
-    - [개선포인트3]
-
-    ### 모범답변 예시
-    사용자 실제 답변, 그에대한 전체 총평과 개선포인트를 반영한 새로운 답변 생성
-    두괄식으로 서론, 본론, 결론으로 구조화
-    [서론] : 서-본-결에 대한 핵심 메시지
-    [본론] : 구체적인 경험 혹은 사례 언급
-    [결론] : 배운점 혹은 향후 발전계획
+    [작성 규칙]
+    - 반드시 "존댓말(합니다체)"를 사용하세요.
+    - Markdown 형식을 엄격히 준수하세요.
+    - 문단 사이에는 반드시 빈 줄(\\n\\n)을 넣으세요.
     """)
 
-    # 모델 호출
+    # 조건에 따른 "인재상 섹션" 및 "출력 포맷" 분기 처리
+    if company_values_content:
+        # Case A: 회사 정보가 있는 경우 -> 인재상 내용과 출력 포맷 포함
+        dynamic_instruction = dedent(f"""
+        [회사 인재상 정보]
+        {company_values_content}
+
+        [지시 사항]
+        위 [회사 인재상 정보]를 분석하여 답변이 기업 문화에 맞는지 평가에 반영하세요.
+
+        아래 형식으로만 출력하세요:
+
+        ### 입력한 기업 인재상
+        (여기에는 위 인재상 정보를 2~3문장으로 요약하여 작성)
+
+        ### 기업 맞춤 조언
+        (해당 기업 인재상이 요구하는 방향으로 답변을 보완할 구체적 조언 3~5문장)
+
+        ### 전체 총평
+        (전체 총평 5~6줄)
+
+        ### 개선포인트
+        - [개선포인트1] (이유와 개선 방법)
+        - [개선포인트2]
+        - [개선포인트3]
+
+        ### 모범답변 예시
+        (서론-본론-결론 구조로 작성된 개선된 답변)
+        """)
+    else:
+        # Case B: 회사 정보가 없는 경우 -> 인재상 관련 언급 금지 및 섹션 제외
+        dynamic_instruction = dedent(f"""
+        [지시 사항]
+        사용자가 회사 정보를 입력하지 않았습니다. 
+        따라서 **회사, 인재상, 기업 문화에 대한 내용은 절대로 언급하지 마세요.**
+        오직 직무 적합성과 답변의 논리성만 평가하세요.
+
+        아래 형식으로만 출력하세요:
+
+        ### 전체 총평
+        (전체 총평 30줄)
+
+        ### 개선포인트
+        사용자의 답변에서 개선이 왜 필요하고, 어떻게 개선해야할지에 대해 설명
+        - [개선포인트1]
+        - [개선포인트2]
+        - [개선포인트3]
+
+        ### 모범답변 예시
+        (서론-본론-결론 구조로 작성된 개선된 답변)
+        """)
+
+    # 최종 프롬프트 합치기
+    final_prompt = base_prompt + "\n\n" + dynamic_instruction
+
+    # 5. 모델 호출
     resp = client.chat.completions.create(
-        model="gpt-4.1-mini",
+        model="gpt-4.1-mini", # 혹은 gpt-4o 등 사용 중인 모델
         messages=[
             {"role": "system", "content": "한국어 면접 코치로서 간결하고 실질적인 피드백을 제공합니다."},
-            {"role": "user", "content": prompt},
+            {"role": "user", "content": final_prompt},
         ],
         temperature=0.4,
     )

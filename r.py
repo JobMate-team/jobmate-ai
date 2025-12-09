@@ -11,6 +11,7 @@ import json
 #     "question_id": "IT-R&D-001"        
 # }
 
+c = input("지원하고 싶은 회사를 입력하세요:")
 jp = input("직군을 입력하세요 (예: IT, 마케팅, 디자인 등): ")
 q = input("질문 키워드를 입력하세요 (예: OSI, 마케팅 전략 등): ")
 a = input("답변 내용을 입력하세요: ")
@@ -19,6 +20,7 @@ k = int(input("가져올 도큐먼트 개수를 입력하세요 (예: 3): "))
 
 url = "http://localhost:8000/structured-feedback"
 payload = {
+    "company": c,
     "job_family": jp,      # 예: "tech"
     "question": q,
     "answer": a,
