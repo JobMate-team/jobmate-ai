@@ -16,7 +16,7 @@ if not OPENAI_API_KEY:
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("my_ai_project")
+logger = logging.getLogger("JobMateAI")
 
 # OpenAI 클라이언트 및 임베딩 (싱글톤처럼 사용)
 client = OpenAI(api_key=OPENAI_API_KEY)

@@ -366,7 +366,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-001",
       "qustion_text": [
-        ""
+        "OSI 7계층에 대해서 설명해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -386,7 +386,7 @@
     "metadata": {
       "question_id": "IT-R&D-001",
       "qustion_text": [
-        ""
+        "Telemetry가 어떤 용도로 사용되는지 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -406,7 +406,7 @@
     "metadata": {
       "question_id": "IT-R&D-002",
       "qustion_text": [
-        ""
+        "어떤 프로그래밍 툴을 사용할 수 있는지 말해주세요"
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -426,7 +426,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-002",
       "qustion_text": [
-        ""
+        "당사에 자신이 기여할 수 있는 부분이 어떤 부분이라고 생각하는지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -446,7 +446,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-003",
       "qustion_text": [
-        ""
+        "자기소개서를 보니 직무에 연관된 점이 적은 것 같은데 어떻게 생각하시는지 말씀해주세요"
       ],
       "question_type": "job",
       "competency_tags": [
@@ -466,7 +466,7 @@
     "metadata": {
       "question_id": "IT-R&D-003",
       "qustion_text": [
-        ""
+        "본인이 당사에서 선호하는 직무가 있는지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -486,7 +486,7 @@
     "metadata": {
       "question_id": "IT-R&D-004",
       "qustion_text": [
-        ""
+        "직무상 새로운 프로그래밍 언어를 배워야할 수 있는데, 잘 배울 수 있는지 말해주세요"
       ],
       "question_type": "job",
       "competency_tags": [
@@ -506,7 +506,7 @@
     "metadata": {
       "question_id": "IT-R&D-005",
       "qustion_text": [
-        ""
+        "채용공고를 봤을 때, 우대사항과 기본 자격 항목이 있는데, 본인은 거기서 어떤 강점과 약점이 있다고 생각하시는지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -526,7 +526,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-004",
       "qustion_text": [
-        ""
+        "가장 힘들었던 일에 대해서 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -546,7 +546,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-005",
       "qustion_text": [
-        ""
+        "졸업작품에 대해서 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -566,7 +566,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-006",
       "qustion_text": [
-        ""
+        "급박한 상황에 대처한 경험에 대해서 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -586,7 +586,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-007",
       "qustion_text": [
-        ""
+        "무모한 도전을 해본적이 있는지에 대해서 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -606,7 +606,7 @@
     "metadata": {
       "question_id": "IT-R&D-006",
       "qustion_text": [
-        ""
+        "SDN과 관련하여 연구경험이 있다면, 이에 대해서 설명해주세요"
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -626,7 +626,7 @@
     "metadata": {
       "question_id": "IT-R&D-007",
       "qustion_text": [
-        ""
+        "대학원에 진학했다면, 대학원 코스웍이 어떻게 되고 무엇을 배웠는지 설명해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -646,7 +646,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-008",
       "qustion_text": [
-        ""
+        "비전공자인데, 왜 해당 직무에 지원하셨는지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -666,7 +666,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-009",
       "qustion_text": [
-        ""
+        "입사 후 포부를 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -686,7 +686,7 @@
     "metadata": {
       "question_id": "IT-Sysengineer-003",
       "qustion_text": [
-        ""
+        "마지막으로 하고 싶으신 말이 있다면 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -706,7 +706,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-010",
       "qustion_text": [
-        ""
+        "당사에 지원한 이유에 대해서 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -726,7 +726,7 @@
     "metadata": {
       "question_id": "IT-Appdev-004",
       "qustion_text": [
-        ""
+        "네트워크에서 OSI 7계층에 대해서 설명해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -746,7 +746,7 @@
     "metadata": {
       "question_id": "IT-Appdev-005",
       "qustion_text": [
-        ""
+        "당사에 기여할 수 있는 부분에 대해서 자세히 설명해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -766,7 +766,7 @@
     "metadata": {
       "question_id": "IT-SWdev-007",
       "qustion_text": [
-        ""
+        "프로젝트에서 간트 차트를 사용해보셨다면, 이를 어떻게 사용하셨는지와 이에 어떤 효과가 있었는지 설명해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -786,7 +786,7 @@
     "metadata": {
       "question_id": "IT-SWdev-008",
       "qustion_text": [
-        ""
+        "차량 네트워크 통신 관련 보안 이슈를 연계한 통신관련 구현을 한 경험이 있다면 설명해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -806,7 +806,7 @@
     "metadata": {
       "question_id": "IT-Appdev-006",
       "qustion_text": [
-        ""
+        "프로젝트 경험 중에서 원리에 대해서 설명해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -826,7 +826,7 @@
     "metadata": {
       "question_id": "IT-SWdev-009",
       "qustion_text": [
-        ""
+        "전공분야 이외에 다른 취미나 좋아하는 것이 없는지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -846,7 +846,7 @@
     "metadata": {
       "question_id": "IT-AI/MLengineer-001",
       "qustion_text": [
-        ""
+        "준비해온 자기소개 이외에 자신의 강점을 30초간 말씀해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -866,7 +866,7 @@
     "metadata": {
       "question_id": "IT-AI/MLengineer-002",
       "qustion_text": [
-        ""
+        "본인가 가까운 인물의 장점과 단점은 무엇인지 말씀해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -886,7 +886,7 @@
     "metadata": {
       "question_id": "IT-AI/MLengineer-003",
       "qustion_text": [
-        ""
+        "본인과 가까운 인물의 장단점을 통해서 본인이 발전한점에 대해서 말씀해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -906,7 +906,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-011",
       "qustion_text": [
-        ""
+        "자신의 단점은 무엇이고 어떻게 극복하셨는지 말씀해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -926,7 +926,7 @@
     "metadata": {
       "question_id": "IT-Sysengineer-004",
       "qustion_text": [
-        ""
+        "AWS ECS, ECR, EKS, fagate의 차이점에 대해서 설명해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -946,7 +946,7 @@
     "metadata": {
       "question_id": "IT-Sysengineer-005",
       "qustion_text": [
-        ""
+        "맡고 있거나 맡았던 프로젝트 중에서 가장 인상깊은 것과 자신의 역할 및 기여도에 대한 부분과 동료와 협업했던 부분에 대해서 설명해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -966,7 +966,7 @@
     "metadata": {
       "question_id": "IT-Appdev-007",
       "qustion_text": [
-        ""
+        "남들이 당신을 어떻게 평가하는지 말해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -986,7 +986,7 @@
     "metadata": {
       "question_id": "IT-Appdev-008",
       "qustion_text": [
-        ""
+        "작성한 관심분야와 다른데 왜 SDS에 지원하셨는지 말해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1006,7 +1006,7 @@
     "metadata": {
       "question_id": "IT-Appdev-009",
       "qustion_text": [
-        ""
+        "대기업 규제 중에서 어떤 규제가 있어야한다고 생각하는지 말해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1026,7 +1026,7 @@
     "metadata": {
       "question_id": "IT-SWdev-010",
       "qustion_text": [
-        ""
+        "비전공자이신데 IT전공자들에 비해 실력이 부족할 수 있을 것 같은데 어떻게 극복할 수 있을지 말해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -1046,7 +1046,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-012",
       "qustion_text": [
-        ""
+        "블록체인의 약점과 당사에서 이것을 어떻게 보완할 수 있을지에 대해서 말해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -1066,7 +1066,7 @@
     "metadata": {
       "question_id": "IT-SWdev-011",
       "qustion_text": [
-        ""
+        "당사의 경우 IT부서의 실제 개발은 FIS에서 진행해서 입사 후에 실제 개발 업무는 안할 수도 있는데 괜찮으신지 말해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1086,7 +1086,7 @@
     "metadata": {
       "question_id": "IT-SWdev-012",
       "qustion_text": [
-        ""
+        "당사의 애플리케이션이 간단한 방식으로 가야하는지, 통합앱 형시긍로 가야하는지 본인의 생각은 어떠한지 말해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1106,7 +1106,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-013",
       "qustion_text": [
-        ""
+        "왜 대학원 진학을 하지않고, 당사에 입사지원을 하셨는지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1126,7 +1126,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-014",
       "qustion_text": [
-        ""
+        "당사에서 좋은 IT인재를 등용하기 위해서 어떻게 해야할지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1146,7 +1146,7 @@
     "metadata": {
       "question_id": "IT-AI/MLengineer-004",
       "qustion_text": [
-        ""
+        "입사하게 된다면 지원한 직무 뿐만 아니라 개발업무도 하게 될 수 있는데, 어떻게 생각하시는지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1166,7 +1166,7 @@
     "metadata": {
       "question_id": "IT-AI/MLengineer-005",
       "qustion_text": [
-        ""
+        "학위 논문을 포함해서 연구실적을 구체적으로 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1186,7 +1186,7 @@
     "metadata": {
       "question_id": "IT-AI/MLengineer-006",
       "qustion_text": [
-        ""
+        "코딩테스트 1번을 풀어나간 간단한 브리핑을 해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1206,7 +1206,7 @@
     "metadata": {
       "question_id": "IT-QA-001",
       "qustion_text": [
-        ""
+        "맡은 직무를 잘 할 수 있는 자신의 장점 2가지와 단점 1가지를 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1226,7 +1226,7 @@
     "metadata": {
       "question_id": "IT-QA-002",
       "qustion_text": [
-        ""
+        "마지막으로 면접관에게 질문하시고 싶은 부분이 있다면 해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1246,7 +1246,7 @@
     "metadata": {
       "question_id": "IT-QA-003",
       "qustion_text": [
-        ""
+        "본인의 별명이 무엇인지 말씀해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -1266,7 +1266,7 @@
     "metadata": {
       "question_id": "IT-QA-004",
       "qustion_text": [
-        ""
+        "테스트케이스를 직접만들 때 무엇을 고려하여 설계하였는지 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -1286,7 +1286,7 @@
     "metadata": {
       "question_id": "IT-Gamedev-001",
       "qustion_text": [
-        ""
+        "본인이 지원하신 직무가 무슨일을 한다고 생각하시는지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1306,7 +1306,7 @@
     "metadata": {
       "question_id": "IT-QA-005",
       "qustion_text": [
-        ""
+        "마지막으로 면접관에게 질문하시고 싶은 부분이 있다면 해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1326,7 +1326,7 @@
     "metadata": {
       "question_id": "IT-QA-006",
       "qustion_text": [
-        ""
+        "최근에 본 직무 관련 뉴스에 대해서 말해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1346,7 +1346,7 @@
     "metadata": {
       "question_id": "IT-QA-007",
       "qustion_text": [
-        ""
+        "당사의 애플리케이션을 사용해보았다면, 어떤 문제가 있었는지 설명해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1366,7 +1366,7 @@
     "metadata": {
       "question_id": "IT-QA-008",
       "qustion_text": [
-        ""
+        "졸업 후 공백기간 동안 무엇을 하였는지 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1386,7 +1386,7 @@
     "metadata": {
       "question_id": "IT-QA-009",
       "qustion_text": [
-        ""
+        "인턴 근무 경험이 있다면, 해당 근무에 대해 스스로 평가해보세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1406,7 +1406,7 @@
     "metadata": {
       "question_id": "IT-QA-010",
       "qustion_text": [
-        ""
+        "본인이 가장 오래 플레이해본 게임과 가장 마음에 들었던 컨텐츠에 대해서 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1426,7 +1426,7 @@
     "metadata": {
       "question_id": "IT-QA-011",
       "qustion_text": [
-        ""
+        "조직 내 갈등이 발생했을 때 어떻게 중재하였는지 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1446,7 +1446,7 @@
     "metadata": {
       "question_id": "IT-QA-012",
       "qustion_text": [
-        ""
+        "게임 내 재화를 현금 거래하는 것에 대해서 찬성인지 반대인지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1466,7 +1466,7 @@
     "metadata": {
       "question_id": "IT-QA-013",
       "qustion_text": [
-        ""
+        "친구들이 부르는 별명에 대해서 말씀해주세요."
       ],
       "question_type": "tenacity",
       "competency_tags": [
@@ -1486,7 +1486,7 @@
     "metadata": {
       "question_id": "IT-Appdev-010",
       "qustion_text": [
-        ""
+        "본인의 연구 성과 및 경력을 당사의 기술 발전에 어떻게 기여할 수 있을 지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1506,7 +1506,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-015",
       "qustion_text": [
-        ""
+        "왜 해당 직무를 선택했는지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1526,7 +1526,7 @@
     "metadata": {
       "question_id": "IT-Appdev-011",
       "qustion_text": [
-        ""
+        "가장 기억에 남는 프로젝트와 수행 중 가장 어려웠던 점이 무엇인지 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1546,7 +1546,7 @@
     "metadata": {
       "question_id": "IT-Appdev-012",
       "qustion_text": [
-        ""
+        "아르바이트를 오래 하셨는데, 이유에 대해서 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1566,7 +1566,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-016",
       "qustion_text": [
-        ""
+        "PT주제에 대해서 설명해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1586,7 +1586,7 @@
     "metadata": {
       "question_id": "IT-Netengineer-017",
       "qustion_text": [
-        ""
+        "다른 회사에서 오퍼가 온다면 어떻게 할 것인지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1606,7 +1606,7 @@
     "metadata": {
       "question_id": "IT-Appdev-013",
       "qustion_text": [
-        ""
+        "PT내용에 대해서 실현할 수 있는 기술적인 방안에 대해서 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -1626,7 +1626,7 @@
     "metadata": {
       "question_id": "IT-Appdev-014",
       "qustion_text": [
-        ""
+        "자신이 리더형인지 팔로워형인지 말씀해주세요."
       ],
       "question_type": "behavior",
       "competency_tags": [
@@ -1646,7 +1646,7 @@
     "metadata": {
       "question_id": "IT-Appdev-015",
       "qustion_text": [
-        ""
+        "만약 입사 이후 원하는 직무를 맡지 못하였을때, 어떻게 할 것인지 말씀해주세요."
       ],
       "question_type": "job",
       "competency_tags": [
@@ -1666,7 +1666,7 @@
     "metadata": {
       "question_id": "IT-Appdev-016",
       "qustion_text": [
-        ""
+        "PT발표에서 제시한 대안이 예상처럼 안된다면 어떻게 할 것인지 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1686,7 +1686,7 @@
     "metadata": {
       "question_id": "IT-Appdev-017",
       "qustion_text": [
-        ""
+        "코딩테스트 문제를 못풀었는데, 일하다가 이렇게 못푸는 문제가 있다면 어떻게 할 것인지 말씀해주세요."
       ],
       "question_type": "experience",
       "competency_tags": [
@@ -1706,7 +1706,7 @@
     "metadata": {
       "question_id": "IT-Appdev-018",
       "qustion_text": [
-        ""
+        "빅데이터와 스몰데이터의 차이점에 대해서 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -1726,7 +1726,7 @@
     "metadata": {
       "question_id": "IT-Webdev-004",
       "qustion_text": [
-        ""
+        "MVC가 무엇인지에 대해서 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -1746,7 +1746,7 @@
     "metadata": {
       "question_id": "IT-Webdev-005",
       "qustion_text": [
-        ""
+        "db procedure에 대해서 아시는대로 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [
@@ -1766,7 +1766,7 @@
     "metadata": {
       "question_id": "IT-Webdev-006",
       "qustion_text": [
-        ""
+        "사용해본 DBMS에 대해서 말씀해주세요."
       ],
       "question_type": "tech",
       "competency_tags": [

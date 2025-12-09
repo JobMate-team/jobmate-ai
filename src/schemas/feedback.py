@@ -24,6 +24,7 @@ class FeedbackResponse(BaseModel):
 
 # --- 랜덤 질문 추출 모델 ---
 class RandomQuestionRequest(BaseModel):
+    job_family: str
     q_list: list[str]
     count: int
 
