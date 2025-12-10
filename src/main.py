@@ -1,12 +1,16 @@
 from fastapi import FastAPI
 from src.routers import feedback, search
+from src.routers import interview # 생성형 질문 라우터
 from src.services.rag_service import init_vectorstore
 
 app = FastAPI()
 
+
+
 # 라우터 등록
 app.include_router(search.router)
 app.include_router(feedback.router)
+app.include_router(interview.router) 
 
 @app.on_event("startup")
 async def startup_event():
@@ -19,7 +23,7 @@ async def startup_event():
 def health_check():
     return {"status": "ok"}
 
-if __name__ == "__main__":
-    import uvicorn
-    # 로컬 테스트용
-    uvicorn.run("src.main:app", host="0.0.0.0", port=8000, reload=True)
+# if __name__ == "__main__":
+#     import uvicorn
+#     # 로컬 테스트용
+#     uvicorn.run("src.main:app", host="0.0.0.0", port=8000, reload=True)
