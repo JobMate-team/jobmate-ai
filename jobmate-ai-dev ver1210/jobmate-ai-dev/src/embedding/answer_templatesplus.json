@@ -436,14 +436,14 @@
         "metadata": {
             "answer_id": "RnD-RnDEngineer-001-ans",
             "question_text": "살면서 힘들었던 경험이 있는가? 어떻게 극복하였는가?",
-            "question_id": "RnD-RnDEngineer-001-025",
+            "question_id": "RnD-RnDEngineer-001",
             "question_type": "tenacity",
             "competency_tags": [
                 "resilience",
                 "problem_solving"
             ],
             "structure_name": "SOARA",
-            "job_family": "Planning",
+            "job_family": "R&D",
             "position": "R&D 엔지니어 (연구 개발 엔지니어)",
             "level": "신입",
             "feature": "answer"
