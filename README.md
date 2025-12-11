@@ -4,33 +4,44 @@
 ```
 
 .
-├── faiss_index/             # FAISS 벡터 DB 인덱스 저장소 (생성된 .faiss, .pkl 파일)
-├── r.py                     # 간단한 요청 테스트 또는 실행 스크립트
-├── requirements.txt         # 프로젝트 의존성 패키지 목록
-└── src/                     # 소스 코드 메인 디렉터리
-    ├── core/                # 프로젝트 설정 및 환경 변수 관리
-    │   └── config.py        # .env 로드, 로깅 설정, 전역 상수 정의
+├── faiss_index/                     # FAISS 벡터 DB 인덱스 저장 디렉터리 (index.faiss, index.pkl)
+├── r.py                             # 간단한 요청 테스트 / 실험용 스크립트
+├── requirements.txt                 # 프로젝트 의존성 패키지 목록
+└── src/                             # 메인 애플리케이션 소스 코드
+    ├── core/                        # 프로젝트 설정 및 환경 변수 관리
+    │   └── config.py                # .env 로드, 로깅 설정, 전역 환경 변수를 정의하는 설정 모듈
     │
-    ├── embedding/           # RAG(검색 증강 생성)를 위한 원본 데이터 (JSON)
-    │   ├── answer_patterns.json    # 답변 구조 패턴 데이터
-    │   ├── company_values.json     # 기업별 인재상 데이터
-    │   ├── competency_rubrics.json # 역량 평가 루브릭
-    │   └── question_templates.json # 면접 질문 템플릿
+    ├── embedding/                   # RAG 및 생성 모델에 사용하는 JSON 기반 정적 데이터
+    │   ├── answer_patterns.json     # 답변 구조/패턴 데이터
+    │   ├── answer_templates.json    # 기본 답변 템플릿
+    │   ├── answer_templates_plus.json # 확장 템플릿(고급 버전)
+    │   ├── company_values.json      # 기업별 핵심 가치관 데이터
+    │   ├── competency_rubrics.json  # 역량 평가 기준(루브릭)
+    │   └── question_templates.json  # 면접 질문 템플릿
     │
-    ├── faiss_index/         # (백업/참조용) 임베딩 인덱스 폴더
-    ├── main.py              # 애플리케이션 진입점 (FastAPI App 실행)
+    ├── faiss_index/                 # (서비스용) 임베딩 인덱스 저장 폴더
+    │   ├── index.faiss              # 벡터 DB 인덱스 파일
+    │   └── index.pkl                # 인덱스 메타데이터
     │
-    ├── routers/             # API 엔드포인트 라우팅 (Controller 역할)
-    │   ├── feedback.py      # 면접 피드백 생성 관련 API
-    │   └── search.py        # 질문/답변 검색 및 조회 API
+    ├── main.py                      # FastAPI 애플리케이션 진입점 (라우터 등록 및 서비스 시작)
     │
-    ├── schemas/             # Pydantic 데이터 모델 (DTO)
-    │   └── feedback.py      # 요청(Request) 및 응답(Response) 데이터 구조 정의
+    ├── routers/                     # API 엔드포인트 라우팅 (Controller 역할)
+    │   ├── interview.py             # 면접 질문 생성 API
+    │   ├── feedback.py              # 답변 피드백 생성 API
+    │   ├── search.py                # RAG 검색 API
+    │   └── tip.py                   # 면접 팁/가이드 생성 API
     │
-    └── services/            # 비즈니스 로직 처리 (Service Layer)
-        ├── ai_service.py    # OpenAI GPT API 호출 및 프롬프트 엔지니어링 로직
-        ├── rag_service.py   # FAISS 벡터 검색 및 데이터 검색 로직
-        └── utils.py         # 데이터 로드 등 공통 유틸리티 함수
+    ├── schemas/                     # 요청/응답 데이터 구조 정의 (Pydantic DTO)
+    │   ├── feedback.py              # 피드백 API 스키마
+    │   ├── gen_question_models.py   # 질문 생성 API 스키마
+    │   └── gen_tip_models.py        # 팁 생성 API 스키마
+    │
+    └── services/                    # 핵심 비즈니스 로직 처리(Service Layer)
+        ├── ai_service.py            # OpenAI GPT 호출 및 프롬프트 구성 로직
+        ├── gen_service.py           # 면접 질문 생성 로직
+        ├── rag_service.py           # FAISS 기반 검색/임베딩 조회 처리
+        ├── tip_service.py           # 면접 팁 및 조언 생성 로직
+        └── utils.py                 # 공통 유틸 함수 (전처리, 파일 로드 등)
 
 ```
 ### 🏗 Architecture Details
@@ -102,7 +113,8 @@ pip install -r requirements.txt
 │       ├── question_templates.json
 │       ├── answer_patterns.json
 │       ├── competency_rubrics.json
-│       └── model_answers.json (혹은 company_values.json)
+│       ├── answer_templates
+|       └── company_values.json
 └── ...
 ```
 4️⃣ 서버 실행Uvicorn을 사용하여 FastAPI 서버를 실행합니다.
@@ -113,8 +125,12 @@ uvicorn src.main:app --reload --port 8001
 ```
 5️⃣ API 테스트 (Swagger UI)브라우저를 열고 아래 주소로 접속하여 API를 테스트할 수 있습니다.
 
-👉 접속 URL: http://127.0.0.1:8001/docs테스트 방법POST /structured-feedback 엔드포인트 클릭
+👉 접속 URL: http://127.0.0.1:8001/docs
+테스트 방법
+
+POST /structured-feedback 엔드포인트 클릭
 Try it out 버튼 클릭아래 Request Body 입력 후 Execute 클릭📝 
+
 Request Body 예시
 ```
 JSON{
