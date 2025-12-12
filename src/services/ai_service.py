@@ -46,7 +46,7 @@ def generate_structured_feedback_content(
         {{
         "요약된_인재상": "(요약된 인재상 2~3문장)",
         "기업_맞춤_조언": "(구체적 조언 3~5문장)",
-        "전체_총평": "(자세한 총평 100문장)",
+        "전체_총평": "(자세한 총평  15문장)",
         "개선포인트": [
             "개선포인트1 (이유와 개선 방법)",
             "개선포인트2",
@@ -68,7 +68,7 @@ def generate_structured_feedback_content(
         오직 직무 적합성과 답변의 논리성만 평가하세요.
         위 지침에 따라 분석한 결과를 **반드시 다음 JSON 스키마 형식으로만 출력**하세요.
     
-        "전체_총평": "(자세한 총평 100문장)",
+        "전체_총평": "(자세한 총평 20문장)",
         "개선포인트": [
             "개선포인트1 (이유와 개선 방법)",
             "개선포인트2",
@@ -86,7 +86,7 @@ def generate_structured_feedback_content(
     # 4. 모델 호출 및 JSON 모드 활성화
     try:
         resp = client.chat.completions.create(
-            model="gpt-4.1-mini",
+            model="gpt-5.1",
             messages=[
                 {"role": "system", "content": "한국어 면접 코치로서 간결하고 실질적인 피드백을 제공합니다."},
                 {"role": "user", "content": final_prompt},
