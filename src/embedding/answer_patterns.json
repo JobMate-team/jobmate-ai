@@ -12,7 +12,7 @@
     "page_content": "가치관 질문에는 PREP 구조를 활용하세요:\n- Point: 요지\n- Reason: 이유\n- Example: 사례\n- Point: 반복 정리",
     "metadata": {
       "pattern_id": "pattern_prep_behavioral",
-      "question_type": "behavioral",
+      "question_type": "behavior",
       "structure_name": "PREP",
       "feature": "answer_patterns"
     }
