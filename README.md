@@ -14,7 +14,6 @@
     ├── embedding/                   # RAG 및 생성 모델에 사용하는 JSON 기반 정적 데이터
     │   ├── answer_patterns.json     # 답변 구조/패턴 데이터
     │   ├── answer_templates.json    # 기본 답변 템플릿
-    │   ├── answer_templates_plus.json # 확장 템플릿(고급 버전)
     │   ├── company_values.json      # 기업별 핵심 가치관 데이터
     │   ├── competency_rubrics.json  # 역량 평가 기준(루브릭)
     │   └── question_templates.json  # 면접 질문 템플릿
